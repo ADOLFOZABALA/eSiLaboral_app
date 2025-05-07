@@ -1,0 +1,70 @@
+
+/* app.css */
+
+/* Tipografía */
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans&display=swap');
+
+/* Variables globales */
+:root {
+  --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif;
+
+  --radius: 0.625rem;
+  --radius-lg: var(--radius);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-sm: calc(var(--radius) - 4px);
+
+  /* Modo claro */
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.145 0 0);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.145 0 0);
+  --primary: oklch(0.205 0 0);
+  --primary-foreground: oklch(0.985 0 0);
+  --border: oklch(0.922 0 0);
+  --input: oklch(0.922 0 0);
+  --ring: oklch(0.87 0 0);
+}
+
+/* Modo oscuro */
+.dark {
+  --background: oklch(0.145 0 0);
+  --foreground: oklch(1 0 0);
+  --card: oklch(0.145 0 0);
+  --card-foreground: oklch(1 0 0);
+  --primary: oklch(0.985 0 0);
+  --primary-foreground: oklch(0.205 0 0);
+  --border: oklch(0.3 0 0);
+  --input: oklch(0.3 0 0);
+  --ring: oklch(0.4 0 0);
+}
+
+/* Reset básico */
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Ejemplo de clases globales */
+.card {
+  background-color: var(--card);
+  color: var(--card-foreground);
+  border-radius: var(--radius-md);
+  padding: 1rem;
+  box-shadow: 0 0 0.5rem rgba(0,0,0,0.1);
+}
+
+/* Botón primario personalizado */
+.btn-primary-custom {
+  background-color: var(--primary);
+  color: var(--primary-foreground);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-sm);
+}
+
+.btn-primary-custom:hover {
+  opacity: 0.9;
+}

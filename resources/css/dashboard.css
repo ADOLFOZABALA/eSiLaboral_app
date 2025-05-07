@@ -1,0 +1,26 @@
+.dashboard-box {
+    position: relative;
+    border: 1px solid #ccc;
+    border-radius: 1rem;
+    padding: 1rem;
+    background-color: #fff;
+    min-height: 200px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Puedes personalizar este patrón de fondo como desees */
+  .placeholder-pattern {
+    position: absolute;
+    inset: 0;
+    background-image: repeating-linear-gradient(
+      45deg,
+      #f2f2f2,
+      #f2f2f2 10px,
+      #e0e0e0 10px,
+      #e0e0e0 20px
+    );
+    opacity: 0.3;
+    z-index: 0;
+    pointer-events: none;
+  }
+  

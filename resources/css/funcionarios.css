@@ -1,0 +1,132 @@
+/* Contenedor principal */
+.funcionarios-container {
+    max-width: 600px;
+    background: #ffffff;
+    padding: 30px;
+    margin: 40px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;  
+  }
+  
+  /* Título */
+  .funcionarios-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Mensajes */
+  .funcionarios-message {
+    font-size: 1rem;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+  }
+  
+  .funcionarios-message.success {
+    background: #d4edda;
+    color: #155724;
+  }
+  
+  .funcionarios-message.error {
+    background: #f8d7da;
+    color: #721c24;
+  }
+  
+  /* Formulario con Grid */
+  funcionarios-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 500px;
+    margin: auto;
+    
+  }
+  
+  
+  /* Campos de entrada */
+  .funcionarios-form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    margin-top: 15px
+  }
+  
+  /* Ajuste para etiquetas */
+  .funcionarios-form label {
+    grid-column: span 2;
+    text-align: left;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-top: 20px
+  }
+  
+  /* Botón de envío ocupa toda la fila */
+  .funcionarios-button {
+    grid-column: span 2;
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 12px;
+    margin-top: 20px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .funcionarios-button:hover {
+    background: #0056b3;
+  }
+  
+  /* Responsividad */
+  @media (max-width: 500px) {
+    .funcionarios-container {
+        width: 90%;
+    }
+    
+    .funcionarios-form {
+        grid-template-columns: 1fr;
+    }
+  
+    .funcionarios-button {
+        grid-column: span 1;
+    }
+  }
+  .form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+  .form-row input {
+    width: 100%;
+  }
+  
+  .form-row-fechas {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+  .form-row-fechas div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+  }
+  
+  .form-row-correo {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .form-row-correo input {
+    width: 100%;
+  }
+  
